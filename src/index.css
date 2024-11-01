@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      url("./fonts/Gilroy-Medium.woff2") format("woff2"),
+      url("./fonts/Gilroy-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      url("./fonts/Gilroy-Heavy.woff2") format("woff2"),
+      url("./fonts/Gilroy-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      url("./fonts/Gilroy-Bold.woff2") format("woff2"),
+      url("./fonts/Gilroy-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      url("./fonts/Gilroy-Light.woff2") format("woff2"),
+      url("./fonts/Gilroy-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      url("./fonts/Gilroy-Regular.woff2") format("woff2"),
+      url("./fonts/Gilroy-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply h-full overflow-hidden font-gilroy;
+  }
+
+  #root {
+    @apply flex h-full flex-col;
+  }
+
+  main {
+    @apply bg-light-gray grow;
+  }
+
+  .base-container {
+    @apply container mx-auto px-5;
+  }
+}
+
+@layer components {
+  .loader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background-color: #43a548;
+    transition: opacity 0.3s ease;
+  }
+
+  .loader-wrapper--none {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .loader::after,
+  .loader::before {
+    content: "";
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+
+  .loader::after {
+    animation-delay: 1s;
+  }
+
+  .button {
+    @apply rounded-full text-white transition-opacity hover:opacity-85;
+  }
+
+  .button--green-gradient {
+    @apply button bg-green-gradient px-[30px] py-[10px] text-sm;
+  }
+
+  .button--green {
+    @apply button bg-green px-[30px] py-[10px] text-xs;
+  }
+
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+}
