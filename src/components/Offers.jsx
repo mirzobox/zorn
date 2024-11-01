@@ -33,7 +33,7 @@ export default function Offers() {
     },
   ];
   return (
-    <section>
+    <section className="mb-5">
       <div className="base-container">
         <h2 className="mb-[30px] text-[28px]">С нами удобнее</h2>
         <div className="flex flex-col gap-5">

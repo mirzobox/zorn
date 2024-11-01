@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <footer>Footer</footer>;
+  return (
+    <footer className="bg-midnight-shadow text-center text-white">
+      Footer
+    </footer>
+  );
 }

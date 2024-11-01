@@ -12,6 +12,7 @@ export default {
       "charcoal-green": "#3D4641",
       "light-gray": "#f7f8f8",
       "slate-green": "#6F7973",
+      "midnight-shadow": "#2C2B35",
       transparent: "transparent",
       white: "#fff",
     },

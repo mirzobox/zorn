@@ -6,7 +6,7 @@ import Logo from "./Logo";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="mb-8">
+    <header>
       <div className="py-5 shadow-sm lg:py-6">
         <div className="base-container flex items-center justify-between">
           <Logo />
