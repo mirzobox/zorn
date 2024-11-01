@@ -58,7 +58,7 @@
   }
 
   body {
-    @apply h-full overflow-hidden font-gilroy;
+    @apply h-full font-gilroy;
   }
 
   #root {
@@ -67,6 +67,10 @@
 
   main {
     @apply bg-light-gray grow;
+  }
+
+  img {
+    @apply inline-block;
   }
 
   .base-container {
@@ -117,7 +121,7 @@
   }
 
   .button {
-    @apply rounded-full text-white transition-opacity hover:opacity-85;
+    @apply inline-block rounded-full text-white transition-opacity hover:opacity-85;
   }
 
   .button--green-gradient {
@@ -126,6 +130,10 @@
 
   .button--green {
     @apply button bg-green px-[30px] py-[10px] text-xs;
+  }
+
+  .button--outline {
+    @apply button border-green text-green border bg-transparent px-[30px] py-[10px] text-base;
   }
 
   @keyframes animloader {

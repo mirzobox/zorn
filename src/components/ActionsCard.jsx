@@ -1,16 +1,18 @@
 export default function ActionsCard({ title, description, icon }) {
   return (
-    <li className="rounde-[20px] bg-white shadow-md" key={title}>
-      <div className="mb-[14px] flex flex-row-reverse items-center gap-[10px]">
-        <h3>{title}</h3>
+    <li className="rounded-[20px] bg-white p-5 shadow-sm" key={title}>
+      <div className="mb-[14px] flex items-center justify-start gap-[10px]">
+        <h3 className="text-xl font-medium text-dark-slate-gray">{title}</h3>
         <img
-          className="h-[52px] w-[52px] rounded-md object-contain"
+          className="-order-1 h-10 w-10 rounded-md object-contain lg:h-[52px] lg:w-[52px]"
           src={icon}
           alt={title}
         />
       </div>
-      <p className="mb-5">{description}</p>
-      <button></button>
+      <p className="text-slate-green mb-5 text-xs">{description}</p>
+      <a className="button--outline" href="#">
+        Подробнее
+      </a>
     </li>
   );
 }

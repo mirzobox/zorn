@@ -1,3 +1,9 @@
+import Actions from "./Actions";
+
 export default function Main() {
-  return <main></main>;
+  return (
+    <main>
+      <Actions />
+    </main>
+  );
 }

@@ -10,6 +10,6 @@ window.onload = () => {
     const loader = document.getElementById("loader");
     const body = document.body;
     loader.classList.add("loader-wrapper--none");
-    body.classList.remove("overflow-hidden");
+    body.classList.remove("overflow-y-hidden");
   }, 0);
 };
