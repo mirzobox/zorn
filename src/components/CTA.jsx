@@ -3,7 +3,7 @@ import { GiftIcon } from "../../public";
 
 export default function CTA() {
   return (
-    <div className="base-container">
+    <div className="base-container mb-10">
       <div className="bg-light-green-gradient rounded-[20px] p-5 shadow-sm">
         <div className="mb-[10px] flex items-center gap-5">
           <p className="text-green">

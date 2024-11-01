@@ -66,11 +66,17 @@
   }
 
   main {
-    @apply bg-light-gray grow;
+    @apply bg-light-gray grow py-[60px];
   }
 
   img {
     @apply inline-block;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-medium;
   }
 
   .base-container {

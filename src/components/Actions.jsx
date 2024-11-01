@@ -8,7 +8,6 @@ import {
   ProgressIcon,
 } from "../../public";
 import ActionsCard from "./ActionsCard";
-import CTA from "./CTA";
 
 export default function Actions() {
   const actionList = [
@@ -57,16 +56,15 @@ export default function Actions() {
   ];
 
   return (
-    <section className="py-[60px]">
+    <section>
       <div className="base-container mb-10">
         <h2 className="sr-only">Actions</h2>
         <ul className="grid grid-cols-1 gap-5">
           {actionList.map((props) => {
-            return <ActionsCard {...props} />;
+            return <ActionsCard key={props.title} {...props} />;
           })}
         </ul>
       </div>
-      <CTA />
     </section>
   );
 }

@@ -9,6 +9,7 @@ export default {
       "dark-slate-gray": "#2c2b35",
       green: "#43A548",
       "light-mist": "#f3f4f7",
+      "charcoal-green": "#3D4641",
       "light-gray": "#f7f8f8",
       "slate-green": "#6F7973",
       transparent: "transparent",

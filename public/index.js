@@ -2,6 +2,8 @@ export { default as BurgerIcon } from "./burger.svg";
 export { default as GiftIcon } from "./gift.svg";
 export { default as HeroImg } from "./hero.svg";
 export { default as LogoImg } from "./logo.jpeg";
+export { default as MinusIcon } from "./minus.svg";
+export { default as PlusIcon } from "./plus.svg";
 export { default as XIcon } from "./x-icon.svg";
 
 // Actions
