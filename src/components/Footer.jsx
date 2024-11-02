@@ -1,6 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-midnight-shadow text-center text-white">
+    <footer
+      style={{ display: "none" }}
+      className="bg-midnight-shadow text-center text-white"
+    >
       Footer
     </footer>
   );

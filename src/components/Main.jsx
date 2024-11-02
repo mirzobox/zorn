@@ -5,7 +5,7 @@ import Offers from "./Offers";
 
 export default function Main() {
   return (
-    <main>
+    <main style={{ display: "none" }}>
       <Actions />
       <CTA />
       <Offers />
